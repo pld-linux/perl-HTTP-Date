@@ -8,13 +8,13 @@
 Summary:	HTTP::Date - date conversion routines
 Summary(pl.UTF-8):	HTTP::Date - funkcje do konwersji dat
 Name:		perl-HTTP-Date
-Version:	6.00
+Version:	6.02
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/HTTP/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	41b875ac89c14d7f66515b52cdd12acd
+# Source0-md5:	52b7a0d5982d61be1edb217751d7daba
 URL:		http://search.cpan.org/dist/HTTP-Date/
 BuildRequires:	perl-devel >= 1:5.8.8
 BuildRequires:	rpm-perlprov >= 4.1-13
