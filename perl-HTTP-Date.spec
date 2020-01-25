@@ -4,7 +4,6 @@
 #
 %define		pdir	HTTP
 %define		pnam	Date
-%include	/usr/lib/rpm/macros.perl
 Summary:	HTTP::Date - date conversion routines
 Summary(pl.UTF-8):	HTTP::Date - funkcje do konwersji dat
 Name:		perl-HTTP-Date
