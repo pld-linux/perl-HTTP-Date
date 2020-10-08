@@ -1,22 +1,27 @@
 #
 # Conditional build:
-%bcond_without	tests		# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	HTTP
 %define		pnam	Date
 Summary:	HTTP::Date - date conversion routines
 Summary(pl.UTF-8):	HTTP::Date - funkcje do konwersji dat
 Name:		perl-HTTP-Date
-Version:	6.03
+Version:	6.05
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/HTTP/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	15fee0918986a5d15a7b63ffb464ad94
-URL:		http://search.cpan.org/dist/HTTP-Date/
+# Source0-md5:	2ecbb3aedf6aef062605191813ca3027
+URL:		https://metacpan.org/release/HTTP-Date
+%if %{with tests}
+BuildRequires:	perl(Time::Local) >= 1.28
+BuildRequires:	perl-Test-Simple
+%endif
 BuildRequires:	perl-devel >= 1:5.8.8
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 Conflicts:	perl-libwww < 6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
