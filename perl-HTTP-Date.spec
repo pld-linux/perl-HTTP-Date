@@ -12,9 +12,9 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/HTTP/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/HTTP/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	60462359bfeb1e6d14602508cfd07885
-URL:		https://metacpan.org/release/HTTP-Date
+URL:		https://metacpan.org/dist/HTTP-Date
 %if %{with tests}
 BuildRequires:	perl(Time::Local) >= 1.28
 BuildRequires:	perl-Test-Simple
